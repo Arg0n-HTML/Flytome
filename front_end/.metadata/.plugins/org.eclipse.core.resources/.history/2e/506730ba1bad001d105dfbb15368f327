@@ -1,0 +1,30 @@
+package com.cubes.controller;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class Inscription extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	        throws ServletException, IOException {
+	        this.getServletContext().getRequestDispatcher("/view/inscription.jsp"
+	                ).forward( request, response );
+	    }
+	    public void doPost(HttpServletRequest request, HttpServletResponse response)
+	            throws ServletException, IOException {
+	    	 String name = request.getParameter("Name");
+	    	 String prenom = request.getParameter("Prenom");
+	    	 String password = request.getParameter("Password");
+	         
+	         request.setAttribute("Name", name);
+	         request.setAttribute("Prenom", prenom);
+	         request.setAttribute("Password", password);
+	         
+	         this.getServletContext().getRequestDispatcher("/view/inscription.jsp").forward(request, response);
+    }
+}

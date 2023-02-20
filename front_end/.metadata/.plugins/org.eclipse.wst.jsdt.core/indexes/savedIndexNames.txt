@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\Raphael\code\raph\cubes_5\front_end\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1246804690.index
+2114919931.index
+861928036.index
+4065852612.index
+3446078111.index
+1705160571.index
+3395620862.index
