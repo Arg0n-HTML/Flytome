@@ -1,3 +1,7 @@
 INDEX VERSION 1.131
 C:\Users\Raphael\code\raph\cubes_5\front_end\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3446078111.index
 \front\src\main\java
+C:\Users\Raphael\code\raph\cubes_5\front_end\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\641216297.index
+\Bloc4\src\main\java
+C:\Users\Raphael\code\raph\cubes_5\front_end\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3231114701.index
+\Bloc4\src\main\java

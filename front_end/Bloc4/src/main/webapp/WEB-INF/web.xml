@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>com.cubes.controller.HelloWorld</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Connexion</servlet-name>
+  	<servlet-class>com.cubes.Controller.Connexion</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>com.cubes.Controller.Home</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Inscription</servlet-name>
+  	<servlet-class>com.cubes.Controller.Inscription</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListHero</servlet-name>
+  	<servlet-class>com.cubes.Controller.ListHero</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Connexion</servlet-name>
+  	<url-pattern>/connexion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Inscription</servlet-name>
+  	<url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListHero</servlet-name>
+  	<url-pattern>/heros</url-pattern>
+  </servlet-mapping>
+</web-app>
+
