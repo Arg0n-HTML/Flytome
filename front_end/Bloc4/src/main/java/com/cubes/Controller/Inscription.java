@@ -34,17 +34,17 @@ public class Inscription extends HttpServlet {
 			//ResultSet rs = null;
 			
 			// Récuperation des données des inputs
-			String Name = request.getParameter("name");
-			String Comp1 = request.getParameter("competence1");
-			String Comp2 = request.getParameter("competence2");
-			String Comp3 = request.getParameter("competence3");
-			String Email = request.getParameter("email");
-			String Password = request.getParameter("password");
-			String Telephone = request.getParameter("telephone");
-			String HabitationNon = request.getParameter("habitation");
+			String name = request.getParameter("name");
+			String comp1 = request.getParameter("competence1");
+			String comp2 = request.getParameter("competence2");
+			String comp3 = request.getParameter("competence3");
+			String email = request.getParameter("email");
+			String passwordRegister = request.getParameter("password");
+			String telephone = request.getParameter("telephone");
+			String habitationNon = request.getParameter("habitation");
 			
 			String ch = "%20";
-			String Habitation = HabitationNon.replaceAll(String.valueOf(' '),String.valueOf(ch));
+			String Habitation = habitationNon.replaceAll(String.valueOf(' '),String.valueOf(ch));
 			
 			
 			// Hashage du mot de passe en SHA-256
@@ -55,27 +55,26 @@ public class Inscription extends HttpServlet {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-			byte[] hash = digest.digest(Password.getBytes(StandardCharsets.UTF_8));
+			byte[] hash = digest.digest(passwordRegister.getBytes(StandardCharsets.UTF_8));
 			
 			// Appel a une API pour avoir lattitude et longitude d'une adresse
 			ApiGet resultApi = ApiCall.apiCall(Habitation);
 			String lat = resultApi.getLatitude();
 			String lon = resultApi.getLongitude();
-			System.out.println(lat + " " + lon);
 			
 			// Requete preparée pour eviter les injections où le premier argument de setString est egal a la place du "?" dans VALUES
-			String request1 = "INSERT INTO `heros`(`nomhero`, `competence1`, `competence2`, `competence3`, `password`, `email`, `telephone`, `habitation`) VALUES (?,?,?,?,?,?,?,?,?);";
+			String request1 = "INSERT INTO `heros`(`nomhero`, `competence1`, `competence2`, `competence3`, `password`, `email`, `telephone`, `longitude`, `lattitude`) VALUES (?,?,?,?,?,?,?,?,?);";
 			
 			try {
 				conn = DriverManager.getConnection(jdbcUrl,user,password);
 				PreparedStatement stmt = conn.prepareStatement(request1);
-				stmt.setString(1, Name);
-				stmt.setString(2, Comp1);
-				stmt.setString(3, Comp2);
-				stmt.setString(4, Comp3);
+				stmt.setString(1, name);
+				stmt.setString(2, comp1);
+				stmt.setString(3, comp2);
+				stmt.setString(4, comp3);
 				stmt.setBytes(5, hash);
-				stmt.setString(6, Email);
-				stmt.setString(7, Telephone);
+				stmt.setString(6, email);
+				stmt.setString(7, telephone);
 				stmt.setString(8, lat );
 				stmt.setString(9, lon );
 				stmt.executeUpdate();

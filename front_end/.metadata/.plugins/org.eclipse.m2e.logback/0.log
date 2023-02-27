@@ -1717,3 +1717,11 @@ Caused by: java.lang.Exception: File not found: C:\Users\Raphael\code\raph\cubes
 2023-02-27 11:47:41,991 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\test\resources
 2023-02-27 12:59:56,452 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-02-27 12:59:56,453 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\main\resources
+2023-02-27 12:59:56,455 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-27 12:59:56,456 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\test\resources
+2023-02-27 13:12:41,270 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-27 13:12:41,272 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\main\resources
+2023-02-27 13:12:41,275 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-27 13:12:41,276 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\test\resources
+2023-02-27 13:13:58,192 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-27 13:13:58,193 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Raphael\code\raph\cubes_5\front_end\Bloc4\src\main\resources
