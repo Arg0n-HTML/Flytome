@@ -5,7 +5,7 @@
 <%@include file="head.jsp" %>
 <body>
     <nav class="navbar">
-        <div class="logo"><a href='./home'>Devil's</a></div>
+        <div class="logo"><a href='./home'>FlyToMe !</a></div>
         <div class="menu">
             <ul class="puces">
                 <li><a href="./heros">Nos Héros</a></li>

@@ -3,5 +3,13 @@ nav.navbar {
 }
 
 #map {
-	height: 180px;
+	height: 500px;
+	margin-left: 7%;
+	margin-right: 7%;
+	display: flex;
+}
+
+.formhome {
+	display: flex;
+	justify-content: center;
 }

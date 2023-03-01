@@ -35,4 +35,5 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonGetter"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonSetter"/>
+    <fullyQualifiedTypeName name="com.cubes.Services.ApiGet"/>
 </qualifiedTypeNameHistroy>

@@ -10,13 +10,13 @@ import org.json.*;
 
 public class ApiCall {
 	
-	private static final String API_URL = "https://nominatim.openstreetmap.org/search?q=";
+	private static final String APIURL = "https://nominatim.openstreetmap.org/search?q=";
 	
 	public static ApiGet apiCall(String Habitation) {
 			HttpClient client = HttpClient.newHttpClient();  
 			HttpRequest requestapi = HttpRequest.newBuilder()
 					.GET()
-			        .uri(URI.create(API_URL + Habitation + "&format=json"))
+			        .uri(URI.create(APIURL + Habitation + "&format=json"))
 			        .timeout(Duration.ofMinutes(2))
 			        .header("Content-Type", "application/json")
 			        .build();

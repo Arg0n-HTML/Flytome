@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -30,8 +29,6 @@ public class Inscription extends HttpServlet {
 			String user = "root";
 			String password = "";
 			Connection conn = null;
-			//Statement stat = null;
-			//ResultSet rs = null;
 			
 			// Récuperation des données des inputs
 			String name = request.getParameter("name");
@@ -52,7 +49,6 @@ public class Inscription extends HttpServlet {
 			try {
 				digest = MessageDigest.getInstance("SHA-256");
 			} catch (NoSuchAlgorithmException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			byte[] hash = digest.digest(passwordRegister.getBytes(StandardCharsets.UTF_8));
