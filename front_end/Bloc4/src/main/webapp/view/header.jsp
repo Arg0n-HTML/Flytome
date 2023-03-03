@@ -9,8 +9,7 @@
         <div class="menu">
             <ul class="puces">
                 <li><a href="./heros">Nos Héros</a></li>
-                <li><a href="./line-up">Connect</a></li>
-                <li><a href="./news">News</a></li>
+                <li><a href="./home">Home</a></li>
                 <li>
                     <a class="account" href="inscription">
                         <img src="img/user.png" alt="Profil account" class="account"></img>

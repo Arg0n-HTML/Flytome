@@ -71,8 +71,8 @@ public class Inscription extends HttpServlet {
 				stmt.setBytes(5, hash);
 				stmt.setString(6, email);
 				stmt.setString(7, telephone);
-				stmt.setString(8, lat );
-				stmt.setString(9, lon );
+				stmt.setString(8, lon );
+				stmt.setString(9, lat );
 				stmt.executeUpdate();
 				stmt.close();
 				conn.close();
